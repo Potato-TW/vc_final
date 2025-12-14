@@ -7,29 +7,29 @@ We evaluate pairs of output images with PSNR and SSIM.<br>
 ## How to run it
 
 1. Install requirements<br>
-```
-pip install -r requirements.txt
-or
-conda env create -n <your env name> -f ./requirements.yml
-```
+    ```
+    pip install -r requirements.txt
+    or
+    conda env create -n <your env name> -f ./requirements.yml
+    ```
 2. Get your input or use ours<br>
 
-place your .jpeg or .jpg in the inputs folder (please make sure the image is in baseline not progressive)<br>
+    place your .jpeg or .jpg in the inputs folder (please make sure the image is in baseline not progressive)<br>
 
 3. Run main.py<br>
-```
-python3 main.py dog.jpg
-```
+    ```
+    python3 main.py dog.jpg
+    ```
 
 4. Run verify<br>
-```
-python3 verify_with_cv2_decoder.py --ori-img ./inputs/dog.jpg --we-implement-decoded ./outputs/decoded_dog_y.raw
-```
+    ```
+    python3 verify_with_cv2_decoder.py --ori-img ./inputs/dog.jpg --we-implement-decoded ./outputs/decoded_dog_y.raw
+    ```
 
-5. the result<br>
+5. Result<br>
 
-the result will first show in a window after you close it then the verify result will show out<br>
-there will be a raw file in the outputs <br>
+    the result will first show in a window after you close it then the verify result will show out<br>
+    there will be a raw file in the outputs <br>
 
 ## code sturcture
 ```
